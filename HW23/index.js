@@ -1,5 +1,7 @@
 class Article {
-    constructor({id, name, color, description, maxAmount}) { // 1
+    constructor(argsObj) { // 1
+      const {id, name, color, description, maxAmount} = argsObj || {};
+      
       this.id = id
       this.name = name
       this.color = color
